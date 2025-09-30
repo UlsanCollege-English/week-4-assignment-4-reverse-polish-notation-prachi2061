@@ -32,8 +32,7 @@ def eval_rpn(tokens):
             elif token == '*':
                 stack.append(operand1 * operand2)
             elif token == '/':
-                # Integer division, as per typical RPN problems.
-                # Handles Python's negative number division behavior.
+               
                 stack.append(int(operand1 / operand2))
 
     return stack.pop()
